@@ -22,5 +22,13 @@ for d in data:
 	if len(d) < 100:
 		new.append(d)
 print('There are total:', len(new), 'files length less than 100')
-print(new[0])
-print(new[1])
+#print(new[0])
+#print(new[1])
+
+good = []
+
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('There are total ', len(good), 'commits are include good!')
+print(good[0])
